@@ -1,0 +1,4 @@
+# Halite 2018
+#* * * * * /var/www/halite2018.mlomb.me/cron_games.sh
+#* * * * * /var/www/halite2018.mlomb.me/cron_leaderboard.sh
+#0 * * * * php /var/www/halite2018.mlomb.me/records_cron.php

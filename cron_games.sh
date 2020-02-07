@@ -1,0 +1,12 @@
+(sleep 5  && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 10 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 15 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 20 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 25 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 30 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 35 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 40 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 45 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 50 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 55 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
+(sleep 60 && /usr/bin/php /var/www/halite2018.mlomb.me/cron_games.php >/dev/null 2>&1) &
