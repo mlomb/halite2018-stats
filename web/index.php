@@ -48,7 +48,7 @@ $contest_open = time() < strtotime($finalsBegin);
 			background-color: #091B53;
 			background-size: 100% auto;
 			background-repeat: repeat-y;
-			background-image: linear-gradient(0deg, rgba(0,45,119,0) 4%, #003A99 100%),url(https://halite.io/assets/images/bg-pattern.png);
+			background-image: linear-gradient(0deg, rgba(0,45,119,0) 4%, #003A99 100%),url(bg-pattern.png);
 			color: rgba(255,255,255,0.8);
 			font-family: "Nunito Sans","Helvetica Neue","Helvetica","Arial",sans-serif;
 			
@@ -282,7 +282,7 @@ $contest_open = time() < strtotime($finalsBegin);
 	</head>
 	<body>
 		<div class="container">
-			<img class="logo" alt="Halite" src="https://halite.io/assets/images/full_logo.svg">
+			<img class="logo" alt="Halite" src="full_logo.svg">
 			<div class="title subtitle">Statistics</div>
 			<div class="content">
 				<div class="tabs">
@@ -404,10 +404,15 @@ $contest_open = time() < strtotime($finalsBegin);
 							<?php echo formatNumber($games_users_count); ?> users in games<br>
 							Page generated in <span class="generated"></span>ms<br>
 							<br>
-							<a href="https://forums.halite.io/t/collection-of-post-mortems-bot-source-code/1335.html" target="_blank">Collection of Post-mortems & Bot Source Code for Halite III</a>
+                            You can find the source code for this website <a href="https://github.com/mlomb/halite2018-stats" target="_blank">here</a>.
+
+                            <br>
+                            <br>
+                            <a href="https://forums.halite.io/t/collection-of-post-mortems-bot-source-code/1335.html" target="_blank">Collection of Post-mortems & Bot Source Code for Halite III</a>
+                            
 							<br>
 							<br>
-							Games are fetched every 5 seconds. The leaderboard every 10 seconds. Records are computed every hour.<br>
+							<strike>Games are fetched every 5 seconds. The leaderboard every 10 seconds. Records are computed every hour.</strike> The competition is over!<br>
 							For suggestions and improvements <a href="https://discordapp.com/users/129079402548953088/" target="_bank">ping me</a> on Discord!
 							<br>
 							<br>
@@ -416,7 +421,7 @@ $contest_open = time() < strtotime($finalsBegin);
 				</div>
 			</div>
 			<div class="footer">
-				<span>by <a href="https://2018.halite.io/user/?user_id=206" target="_blank">mlomb</a> (<a href="https://github.com/mlomb" target="_blank">GitHub</a>)<span>
+				<span>by <a href="https://mlomb.me" target="_blank">mlomb</a> (<a href="https://github.com/mlomb" target="_blank">GitHub</a>)<span>
 			</div>
 		</div>
 		<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
@@ -772,7 +777,7 @@ function leaderboardRankToTierImage(rank) {
 	if(tier_index == 0) return "";
 	var name = tierNameFromIndex(tier_index);
 
-	return '<img class="tier" src="https://2018.halite.io/assets/images/level-' + tier_index + '.png" alt="' + name + '" title="' + name + '">';
+	return '<img class="tier" src="level-' + tier_index + '.png" alt="' + name + '" title="' + name + '">';
 }
 function getProfileImage(player, only_url) {
 	// TODO Google Fallback
@@ -919,7 +924,7 @@ function updateLiveGameFeed() {
 				var row = $(`
 					<tr data-game-id="` + game.game_id + `">
 						<td>
-							<a href="https://halite.io/play?game_id=` + game.game_id + `" target="_blank">` + d.toLocaleString() + `</a><br>
+							<a href="https://2018.halite.io/play?game_id=` + game.game_id + `" target="_blank">` + d.toLocaleString() + `</a><br>
 							<time class="timeago" datetime="` + d.toISOString() + `"></time>
 						</td>
 						<td style="padding: 10px 0;"><table class="result-table">` + result_html + `</table></td>

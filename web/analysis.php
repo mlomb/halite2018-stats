@@ -179,7 +179,7 @@ foreach($game_data as $game_id => $game_data) {
 
 ?>
 <center>
-	<h2>Analysis of <a target="_blank" href="https://halite.io/user/?user_id=<?php echo $user_id; ?>"><?php echo $player->username; ?></a> v<?php echo $version.($finals ? "-finals" : ""); ?><i class="fas fa-sync-alt" style="font-size: 19px;margin-top: -3px;margin-left: 10px;color: #54adee;cursor: pointer;" onclick="$('#analyse-version').trigger('change');"></i></h2>
+	<h2>Analysis of <a target="_blank" href="https://2018.halite.io/user/?user_id=<?php echo $user_id; ?>"><?php echo $player->username; ?></a> v<?php echo $version.($finals ? "-finals" : ""); ?><i class="fas fa-sync-alt" style="font-size: 19px;margin-top: -3px;margin-left: 10px;color: #54adee;cursor: pointer;" onclick="$('#analyse-version').trigger('change');"></i></h2>
 	<h4>
 		Games: <?php echo formatNumber($games_count); ?> (<?php echo formatNumber($challenges_count); ?> challenge games excluded)<br>
 		Timeouts: <?php echo formatNumber($timeouts); ?> (<?php echo round($timeouts / $games_count * 100, 2);?>%)<br>
