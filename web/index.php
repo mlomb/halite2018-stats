@@ -825,7 +825,7 @@ function getUserFromId(id) {
 
 
 var game_feed_next = 0
-var game_feed_interval = 5000;
+var game_feed_interval = 5000 + 10000000; /* stop watching for new games */
 var game_feed_last_game = null;
 var game_feed = $("#game-feed");
 
@@ -967,6 +967,8 @@ var live_leaderboard_loading = false;
 var live_leaderboard_interval = 30 * 1000;
 var live_leaderboard_last_data = null;
 setInterval(function() {
+    return; /* stop updating the leaderboard */
+
 	live_leaderboard_interval = Math.max($("#leaderboard-interval").val(), 10) * 1000;
 
 	if(!live_leaderboard_last_load || (new Date()).getTime() - live_leaderboard_last_load > live_leaderboard_interval) {
